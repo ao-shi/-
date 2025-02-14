@@ -1,0 +1,603 @@
+/* 首页内容 */
+/* banner */
+.banner{
+    height: 450px;
+    background-color: #264ADA ;
+}
+.banner .wrapper{
+    display: flex;
+    height: 450px;
+}
+.banner .nav{
+    padding-top: 30px;
+    width: 200px ;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.banner .nav li{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 39px;
+    line-height: 39px;
+    cursor: pointer;
+}
+.banner .nav li:hover{
+    background-color: #EF8220;
+}
+.banner .nav li span{
+    color: transparent;
+}
+.banner .nav li:hover span{
+    color: #fff;
+}
+.banner .nav li:last-child{
+    margin-bottom: 0;
+}
+.banner .nav a{
+    font-size: 18px;
+    color: #fff;
+}
+.banner .pic{
+    width: 860px;
+    height: 450px;
+    cursor: pointer;
+}
+.banner .hot{
+    width: 300px;
+    height: 450px;
+}
+.banner .hot .title{
+    display: flex;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.banner .hot .title h3{
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+}
+.banner .hot .title h3:hover{
+    color: #fff;
+    border-bottom: 1px solid #EF8220;
+}
+.banner .hot .bd{
+    padding-top: 15px;
+    width: 300px;
+    height: 410px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.banner .hot .bd li{
+    list-style-type: disc;
+    margin-left: 30px;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+}
+.banner .hot .bd li a{
+    font-size: 13px;
+    color: #fff;
+}
+.banner .hot .bd li:hover a{
+    color: #EF8220;
+}
+/* 推荐 */
+.recommend{
+    height: 90px;
+    background-color: #191E26 ;
+}
+.recommend ul{
+    display: flex;
+}
+.recommend li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 90px;
+    cursor: pointer;
+
+}
+.recommend .pic1,
+.recommend .pic2,
+.recommend .pic3,
+.recommend .pic4{
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+.recommend .pic1{
+    background-image: url(../images/bgicon1.png);
+}
+.recommend .pic2{
+    background-image: url(../images/bgicon2.png);
+}
+.recommend .pic3{
+    background-image: url(../images/bgicon3.png);
+}
+.recommend .pic4{
+    background-image: url(../images/bgicon4.png);
+}
+.recommend li h3{
+    font-size: 18px;
+    color: #fff;
+}
+.recommend li:hover,
+.recommend .active{
+    background-color: #EF8220;
+}
+.recommend li:hover .pic1{
+    background-image: url(../images/bgicon1.gif);
+}
+.recommend li:hover .pic2{
+    background-image: url(../images/bgicon2.gif);
+}
+.recommend li:hover .pic3{
+    background-image: url(../images/bgicon3.gif);
+}
+.recommend li:hover .pic4{
+    background-image: url(../images/bgicon4.gif);
+}
+
+/* 交互实验室 */
+.light{
+    height: 419px;
+}
+.light .father1,
+.light .father2,
+.light .father3,
+.light .father4,
+.light .father5,
+.light .father6{
+    position: absolute;
+    display: flex;
+    width: 193px;
+    height: 98px;
+    background-image: url(../images/lightning.png);
+    cursor: pointer;
+}
+/* 悬停换背景 */
+.light .father1:hover .son1,
+.light .father2:hover .son,
+.light .father3:hover .son,
+.light .father4:hover .son,
+.light .father5:hover .son,
+.light .father6:hover .son{
+    display: none;
+}
+.light .father1:hover .zi,
+.light .father2:hover .zi,
+.light .father3:hover .zi,
+.light .father4:hover .zi,
+.light .father5:hover .zi,
+.light .father6:hover .zi{
+    display: none;
+}
+.light .father1:hover .rob,
+.light .father2:hover .rob,
+.light .father3:hover .rob,
+.light .father4:hover .rob,
+.light .father5:hover .rob,
+.light .father6:hover .rob{
+    display: block;
+}
+.light .rob{
+    display: none;
+    padding-top: 41px;
+    width: 193px;
+    height: 98px;
+    background-image: url(../images/lightning1.png);
+    text-align: center;
+}
+.light .father1{
+     left: 37px;
+    top: 44px;
+}
+.light .father2{
+    left: 175px;
+    top: 127px;
+}
+.light .father3{
+    left: 375px;
+    top: 152px;
+}
+.light .father4{
+    left: 800px;
+    top: 144px;
+}
+.light .father5{
+    left: 967px;
+    top: 57px;
+}
+.light .father6{
+    left: 1153px;
+    top: 128px;
+}
+.light .son1{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    padding-top: 13px;
+    width: 58px;
+    height: 47px;
+    background: url(../images/lightning2.png) no-repeat;
+    background-size: 58px 47px;
+    text-align: center;
+}
+.light .son{
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    padding-top: 13px;
+    width: 58px;
+    height: 47px;
+    background: url(../images/lightning4.png) no-repeat;
+    background-size: 58px 47px;
+    text-align: center;
+}
+.light .zi{
+    position: absolute;
+    left: 85px;
+    top: 26px;
+    width: 105px;
+    height: 44px;
+    font-size: 16px;
+    color: #999;
+}
+.light .txt{
+
+    color: #F72B58;
+}
+.light .flow{
+    color:#3DCDCA ;
+}
+/* hd--公共样式 */
+.hd{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50px;
+}
+.hd .left .title h3{
+    font-size: 25px;
+}
+.hd .left .title .twice{
+    color: #999;
+}
+.hd .right .more{
+    color: #8B8A8B;
+}
+/* bd--公共样式 */
+.bd{
+    width: 1360px;
+    height: 394px;
+}
+.light .bd .bg{
+    position: relative;
+    width: 1360px;
+    height: 364px;
+    background: url(../images/lightning_bg.gif) no-repeat;
+    background-size: 1360px 364px;
+}
+.light .bd .bg li:first-child{
+    position: absolute;
+    left: 38px;
+    top: 50px;
+    display: flex;
+    width: 193px;
+    height: 91px;
+    background-image: url(../images/lightning.png);
+}
+.light .bd .test{
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    padding-top: 13px;
+    width: 58px;
+    height: 47px;
+    background: url(../images/lightning2.png);
+    background-size: 58px 47px;
+    text-align: center;
+}
+.light .bd .txt{
+    position: absolute;
+    left: -23px;
+    top: 13px;
+    width: 105px;
+    height: 44px;
+    color: #9e9e9e;
+}
+/* 职业体系 */
+.career .hd .left{
+    display: flex;
+    align-items: flex-end;
+
+}
+.hd .left .line{
+    margin: 5px 15px 5px;
+    height: 25px;
+    line-height: 25px;
+    border-left: 2px solid #999;
+}
+.career .bd{
+    margin-top: 30px;
+    height: 290px;
+}
+.career .bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.career .bd li{
+    padding: 24px 51px;
+    width: 310px;
+    height: 290px;
+    border: 2px solid #EFEFEF;
+    border-radius: 10px;
+    text-align: center;
+}
+.career .bd .pic{
+    width: 208px;
+    height: 144px;
+}
+.career .bd li p{
+    margin: 20px 0;
+    color: #8b8a8b;
+}
+.career .bd .button{
+    margin-left: 20px;
+    display: block;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    border: 2px solid #FE933A ;
+    text-align: center;
+    color: #FE933A;
+}
+.career .bd .button:hover{
+    background-color: #FE933A;
+    color: #fff;
+}
+.hd .left .title{
+    display: flex;
+}
+.course .bd{
+    margin-top: 30px;
+    height: 230px;
+}
+.course .bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.course .bd li{
+    width: 310px;
+    height: 230px;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+}
+.course .bd .pic{
+    width: 310px;
+    height: 160px;
+}
+.course .bd .txt{
+    padding: 10px 15px;
+    width: 310px;
+    height: 70px;
+}
+.course .bd .txt h4{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #2C2C40;
+}
+.course .bd .txt .pay{
+    display: flex;
+    justify-content: space-between;
+    color: #FE933A;
+    font-size: 14px;
+}
+.course .bd .txt .pay .user{
+    display: flex;
+    height: 12px;
+    font-size: 12px;
+    color: #ABAFBD;
+}
+.course .bd .txt .pay .user img{
+    margin-top: 4px;
+    margin-right: 2px;
+    width: 10px;
+    height: 10px;
+    line-height: 12px;
+}
+/* 就业班 */
+.job .bd{
+    margin-top: 30px;
+    height: 258px;
+}
+.job .bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.job .bd .father{
+    border: 1px solid #EFEFEF; border-radius: 10px;
+}
+.job .bd li{
+    width: 660px;
+    height: 258px;
+
+}
+.job .bd .pic1,
+.job .bd .pic2{
+    position: relative;
+    width: 660px;
+    height: 138px;
+    overflow: hidden;
+}
+/* 遮罩 */
+.job .bd .mask{
+    display: none;
+    padding-top:86px;
+    width: 660px;
+    height: 138px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.job .bd .mask .button{
+    margin: 0 auto;
+    display: block;
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+    /* border: 2px solid #FE933A ; */
+    text-align: center;
+    color: #fff;
+    background-color: #FE933A;
+}
+.job .bd .pic1:hover .mask,
+.job .bd .pic2:hover .mask{
+display: block;
+}
+.job .bd .pic1{
+    background: url(../images/图片1.png);
+}
+.job .bd .pic2{
+    background: url(../images/图片2.png);
+}
+.job .bd .list{
+    padding: 21px 25px 25px;
+    width: 660px;
+    height: 120px;
+}
+.job .bd .list li{
+    text-align: center;
+}
+.job .bd .list .school{
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+}
+.job .bd .list p{
+    font-size: 18px;
+    color: #666;
+}
+
+/* 推荐讲师 */
+.teacher{
+    height: 180;
+}
+.teacher .bd{
+    margin-top: 30px;
+    height: 180px;
+}
+.teacher .bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.teacher .bd li{
+    width: 268px;
+    height: 180px;
+    /* border-bottom: 2px solid #EFEFEF; */
+}
+.teacher .bd .top{
+    display: flex;
+    width: 268px;
+    height: 100px;
+    border-bottom: 2px solid #EFEFEF;
+}
+.teacher .bd li .pic{
+    position: relative;
+    margin-right: 15px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.teacher .bd li .pic .add{
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+}
+.teacher .bd .top p{
+    margin-top: 14px;
+    font-size: 14px;
+    color: #999;
+}
+.teacher .bd .bottom{
+    width: 268px;
+    height: 80px;
+}
+.teacher .bd .bottom .title{
+    margin-top: 19px;
+    color: #999;
+    font-size: 14px;
+}
+.teacher .bd .bottom .star{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 14px;
+}
+.teacher .bd .bottom .star div span{
+    margin-right: 10px;
+    font-size: 14px;
+    color: #999;
+}
+.teacher .bd .bottom .star img{
+    width: 12px;
+    height: 12px;
+}
+.teacher .bd .bottom .star i{
+    font-size: 14px;
+    color: #999;
+}
+.teacher .bd .bottom .star strong{
+    font-weight: 400;
+}
+
+/*品牌 */
+.brand .bd{
+    margin-top: 30px;
+    height: 100px;
+}.brand .bd ul{
+    display: flex;
+    justify-content: space-between;
+}
+.brand .bd li{
+    width: 200px;
+    height: 56px;
+}
+/* 侧导航 */
+.subnav{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 80px;
+    /* height: 504px; */
+    box-shadow: 0 2px 14px 0 rgba(0,0,0,0.04);
+    border-radius: 8px 0 0 8px;
+    background-color: #fff;
+}
+.subnav a{
+    margin-left: 6px;
+    margin-right: 6px;
+    display: block;
+    width: 32px;
+    height: 44px;
+    font-size: 16px;
+    color: #888;
+}
+.subnav li:hover a{
+    color: #FE933A;
+}
+.subnav li{
+    margin: 20px 14px 0;
+    width: 56px;
+    height: 84px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
